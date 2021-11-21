@@ -7,15 +7,19 @@
     </div>
 
     <YTRanking />
+
+    <timeS />
   </div>
 </template>
 
 <script>
 import YTRanking from "@/components/YTRank.vue"
+import timeS from "@/components/timeS.vue"
 export default {
   name: "App",
   components: {
     YTRanking,
+    timeS,
   },
   data: function () {
     return {
