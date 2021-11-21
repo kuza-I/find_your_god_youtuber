@@ -1,20 +1,25 @@
 <template>
   <div id="app">
     <div class="hello-wrold">
-      <img alt="Vue logo" src="./assets/logo.png" />
       <div class="hello-wrold__message">
         {{ message }}
       </div>
     </div>
+
+    <YTRanking />
   </div>
 </template>
 
 <script>
+import YTRanking from "@/components/YTRank.vue"
 export default {
   name: "App",
+  components: {
+    YTRanking,
+  },
   data: function () {
     return {
-      message: "WebExpert Course Vue Template",
+      message: "あなたの好きなジャンルはなんですか？",
     }
   },
   methods: {},
@@ -31,11 +36,12 @@ export default {
 
 <style scoped>
 .hello-wrold {
-  margin-top: 60px;
+  margin: 60px;
   text-align: center;
 }
 
 .hello-wrold .hello-world__message {
+  font-size: 50px;
   color: #2c3e50;
 }
 </style>
